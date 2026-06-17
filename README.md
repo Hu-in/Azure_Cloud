@@ -40,6 +40,12 @@ The application predicts housing prices using a trained ML model.
 ![GitHub Actions](screenshots/GitHub_Actions.png)
 
 ---
+
+## Demo Video
+
+./azure_demo_video.mp4
+
+---
 ##  Setup Instructions
 
 ### 1. Clone repository
