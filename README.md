@@ -41,7 +41,9 @@ The application predicts housing prices using a trained ML model.
 
 ---
 
-## Demo Video
+##  Demo Video
+
+Watch the demo video here:
 
 ./azure_demo_video.mp4
 
