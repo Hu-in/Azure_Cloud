@@ -23,7 +23,7 @@ def home():
     html = "<h3>Sklearn Prediction Home - CI/CD Demo</h3>"
     return html
 
-# TO DO:  Log out the prediction value
+# TO- DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
     # Performs an sklearn prediction
