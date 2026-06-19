@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd starter_files/flask-sklearn
+          
           pip install -r requirements.txt
 
       - name: Deploy to Azure Web App
