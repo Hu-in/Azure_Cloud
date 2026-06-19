@@ -35,15 +35,14 @@ def predict():
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
-
-    json_payload = request.json
-    LOG.info("JSON payload: %s json_payload")
-    inference_payload = pd.DataFrame(json_payload)
-    LOG.info("inference payload DataFrame: %s inference_payload")
-    scaled_payload = scale(inference_payload)
-    prediction = list(clf.predict(scaled_payload))
-    return jsonify({'prediction': prediction})
-
 if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000)
+_payload = request.json
+    LOG.info("JSON payload: %s json_payload")
+ence payload DataFrame: %s inference_payload")
+    scaled_payload = scale(inference_payload)
+tion': prediction})
+
+main__":
     port = int(os.environ.get("PORT", 8000))
     app.run(host="0.0.0.0", port=port)
