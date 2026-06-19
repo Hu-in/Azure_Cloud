@@ -22,7 +22,7 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    return "<h3>Sklearn Prediction Home </h3>"
+    return "<h3>Sklearn Prediction Home -Continuous Delivery </h3>"
 
 
 @app.route("/predict", methods=["POST"])
