@@ -30,4 +30,4 @@ jobs:
         with:
           app-name: hu-ml-app-3
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: ./starter_files/flask-sklearn
+          package: .
