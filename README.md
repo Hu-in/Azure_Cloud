@@ -49,10 +49,15 @@ https://youtu.be/Hc-TY1haU9Y
 
 ---
 ## Updated Project Demo Video
+I have added an additional screencast to clearly demonstrate the Continuous Integration and Continuous Delivery workflow. The video shows a code change, GitHub Actions pipeline execution, and the automatic deployment reflected in the live Azure application.
+
+You can watch the updated demo video here:
+
+https://youtu.be/tuvXapp19vE
 
 ---
 
-https://youtu.be/tuvXapp19vE
+
 
 ##  Setup Instructions
 
