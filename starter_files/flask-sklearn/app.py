@@ -28,7 +28,9 @@ def home():
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
-        clf = joblib.load("./Housing_price_model/LinearRegression.joblib")
+        model_path = os.path.join(os.path.dirname(__file__), "Housing_price_model", "LinearRegression.joblib")
+        clf = joblib.load(model_path)
+
     except Exception as e:
         LOG.exception("Model not loaded")
         return "Model not loaded", 500
