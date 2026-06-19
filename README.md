@@ -48,6 +48,12 @@ Watch the demo video here:
 https://youtu.be/Hc-TY1haU9Y
 
 ---
+## Updated Project Demo Video
+
+---
+
+https://youtu.be/tuvXapp19vE
+
 ##  Setup Instructions
 
 ### 1. Clone repository
