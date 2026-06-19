@@ -1,51 +1,57 @@
-# Overview
+# Azure_Cloud
+# Project plan is available in Project-management.xlsx
+[![Python application test with Github Actions](https://github.com/Hu-in/Azure_Cloud/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/Hu-in/Azure_Cloud/actions/workflows/pythonapp.yml)
+# Azure ML Flask App Deployment
 
-<TODO: complete this with an overview of your project>
+## Overview
+This project demonstrates deployment of a Flask Machine Learning application
+using Docker, Kubernetes, and Azure App Service.
 
-## Project Plan
-<TODO: Project Plan
+The application predicts housing prices using a trained ML model.
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+---
 
-## Instructions
+## Project Structure
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+- `app.py` → Flask application
+- `model_data/` → Trained ML model
+- `Dockerfile` → Container definition
+- `run_docker.sh` → Run locally in Docker
+- `run_kubernetes.sh` → Deploy to Kubernetes
+- `make_predict_azure_app.sh` → Test deployed Azure endpoint
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+---
+## Screenshots
 
-* Project running on Azure App Service
+### Azure Prediction Output
 
-* Project cloned into Azure Cloud Shell
+![Azure Prediction](screenshots/azure_prediction_output.png)
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+### Local Test
 
-* Output of a test run
+![Local Test](screenshots/Local_Test.png)
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+### Azure Deployment
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+![Azure Deployment](screenshots/Project_Cloned_Azure.png)
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+### GitHub Actions
 
+![GitHub Actions](screenshots/GitHub_Actions.png)
+
+---
+
+##  Demo Video
+
+Watch the demo video here:
+
+https://youtu.be/Hc-TY1haU9Y
+
+---
+##  Setup Instructions
+
+### 1. Clone repository
 ```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
-
-## Enhancements
-
-<TODO: A short description of how to improve the project in the future>
-
-## Demo 
-
-<TODO: Add link Screencast on YouTube>
-
-
+git clone <your-repo-url>
+cd flask-sklearn
+``
