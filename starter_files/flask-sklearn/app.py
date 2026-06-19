@@ -22,16 +22,14 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = "<h3>Sklearn Prediction Home - Continuous Delivery</h3>"
-    return html
+    return "<h3>Sklearn Prediction Home - Continuous Delivery</h3>"
 
 
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
-        # Load pretrained model
         clf = joblib.load("./Housing_price_model/LinearRegression.joblib")
-    except Exception:
+    except Exception as e:
         LOG.exception("Model not loaded")
         return "Model not loaded", 500
 
