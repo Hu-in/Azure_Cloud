@@ -63,7 +63,7 @@ https://youtu.be/tuvXapp19vE
 
 ##  Setup Instructions
 
-### 1. Clone repository
+
 ```bash
 1. Clone the repository
 git clone <your-repo-url>
@@ -87,3 +87,12 @@ Push code:
 git push
 
 ``
+## Future Enhancements 
+The project can be improved in several ways:
+
+Add more advanced ML models (e.g., neural networks)
+Implement input validation and error handling
+Add unit and integration testing
+Improve UI with a frontend (React/HTML)
+Use Docker for containerized deployment
+Add monitoring with Azure Application Insights
