@@ -87,6 +87,13 @@ The following screenshot shows the deployed Azure Web App:
 ---
 ## CI/CD Pipeline Execution
 
+## Azure Pipelines Note
+
+Due to restricted access to Azure DevOps services in the lab environment (credit card requirement),
+the CI/CD pipeline was implemented using GitHub Actions.
+
+The GitHub Actions workflow demonstrates the same Continuous Integration and Continuous Delivery process,
+including build and deployment steps, which is functionally equivalent to Azure Pipelines.
 
 The following screenshot shows a successful CI/CD pipeline execution (build and deployment):
 
