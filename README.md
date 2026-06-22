@@ -1,7 +1,7 @@
 # Azure_Cloud
 
 
-#Project Management
+# Project Management
 
 ## Trello Board
 
@@ -11,10 +11,11 @@ You can view the project board here:
 https://trello.com/b/TJLqBZZc
 
 Project plan is available in Project-management.xlsx
+
 [![Python application test with Github Actions](https://github.com/Hu-in/Azure_Cloud/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/Hu-in/Azure_Cloud/actions/workflows/pythonapp.yml)
 
 ---
-# Azure ML Flask App Deployment
+## Azure ML Flask App Deployment
 
 ## Overview
 This project demonstrates deployment of a Flask Machine Learning application
@@ -23,8 +24,9 @@ using Docker, Kubernetes, and Azure App Service.
 The application predicts housing prices using a trained ML model.
 
 ---
-## Architecture Diagram
-Developer → GitHub Repository → GitHub Actions (CI/CD) → Azure App Service → User/API Request
+# Architecture Diagram
+
+ Developer → GitHub Repository → GitHub Actions (CI/CD) → Azure App Service → User/API Reques
 ---
 ## Project Structure
 
@@ -77,7 +79,6 @@ https://youtu.be/tuvXapp19vE
 ##  Setup Instructions
 
 
-```bash
 1. Clone the repository
 git clone <your-repo-url>
 cd Azure_Cloud
@@ -99,8 +100,9 @@ http://127.0.0.1:8000
 Push code:
 git push
 
-``
-## Future Enhancements 
+---
+# Future Enhancements
+
 The project can be improved in several ways:
 
 Add more advanced ML models (e.g., neural networks)
