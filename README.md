@@ -10,7 +10,9 @@ using Docker, Kubernetes, and Azure App Service.
 The application predicts housing prices using a trained ML model.
 
 ---
-
+## Architecture Diagram
+Developer → GitHub Repository → GitHub Actions (CI/CD) → Azure App Service → User/API Request
+---
 ## Project Structure
 
 - `app.py` → Flask application
@@ -63,6 +65,25 @@ https://youtu.be/tuvXapp19vE
 
 ### 1. Clone repository
 ```bash
+1. Clone the repository
 git clone <your-repo-url>
-cd flask-sklearn
+cd Azure_Cloud
+
+2. Install dependencies
+pip install --user -r requirements.txt
+
+3. Run the application locally
+
+python app.py
+
+4. Open in browser
+http://127.0.0.1:8000
+
+5. Test prediction locally
+./make_predict_azure_app.sh
+
+6. Deployment (CI/CD)
+Push code:
+git push
+
 ``
