@@ -28,30 +28,8 @@ The application predicts housing prices using a trained ML model.
 
 The following diagram shows the overall system workflow:
 
-+-------------+        +------------------+        +----------------------+
-| Developer   | -----> | GitHub Repo      | -----> | GitHub Actions (CI/CD) |
-+-------------+        +------------------+        +----------------------+
-                                                        |
-                                                        v
-                                            +-------------------------+
-                                            | Azure App Service       |
-                                            | (Flask ML Application)  |
-                                            +-------------------------+
-                                                        |
-                                                        v
-                                            +-------------------------+
-                                            | REST API (/predict)     |
-                                            +-------------------------+
-                                                        |
-                                                        v
-                                            +-------------------------+
-                                            | Machine Learning Model  |
-                                            +-------------------------+
-                                                        |
-                                                        v
-                                            +-------------------------+
-                                            | JSON Prediction Output  |
-                                            +-------------------------+
+<img width="715" height="689" alt="image" src="https://github.com/user-attachments/assets/65d5e830-91d9-471c-a4c1-a616014c45f9" />
+
 
 
 ---
