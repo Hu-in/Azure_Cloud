@@ -80,7 +80,13 @@ The following screenshot shows the deployed Azure Web App:
 ![Azure App Service](azure-app-service.png)
 
 ---
+## CI/CD Pipeline Execution
 
+The following screenshot shows a successful run of the CI/CD pipeline:
+
+![Pipeline Success](pipeline-success.png)
+
+---
 
 ##  Setup Instructions
 
