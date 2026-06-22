@@ -73,7 +73,13 @@ You can watch the updated demo video here:
 https://youtu.be/tuvXapp19vE
 
 ---
+## Azure App Service Deployment
 
+The following screenshot shows the deployed Azure Web App:
+
+![Azure App Service](azure-app-service.png)
+
+---
 
 
 ##  Setup Instructions
