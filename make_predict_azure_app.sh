@@ -25,5 +25,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://hu-ml-app-3-a9fpbvhjbqbcdday.westeurope-01.azurewebsites.net/predict
+     -X POST https://hu-ml-app-3-a9fpbvhjbqbcdday.germanywestcentral-01.azurewebsites.net/predict
      #your application name <yourappname>goes here
