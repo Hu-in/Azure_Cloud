@@ -87,9 +87,10 @@ The following screenshot shows the deployed Azure Web App:
 ---
 ## CI/CD Pipeline Execution
 
-The following screenshot shows a successful run of the CI/CD pipeline:
 
-![Pipeline Success](pipeline-success.png)
+The following screenshot shows a successful CI/CD pipeline execution (build and deployment):
+
+![Pipeline Execution](pipeline-execution.png)
 
 ---
 
