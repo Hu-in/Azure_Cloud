@@ -14,7 +14,7 @@ LOG.setLevel(logging.INFO)
 
 def scale(payload):
     """Scales payload"""
-    LOG.info("Scaling payload: %s", payload)
+    LOG.info(f"Scaling payload: {payload}")
     scaler = StandardScaler().fit(payload)
     scaled_adhoc_predict = scaler.transform(payload)
     return scaled_adhoc_predict
@@ -22,29 +22,34 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    return "<h3>Sklearn Prediction Home - Continuous Delivery </h3>"
+    return "<h3>Sklearn Prediction Home - Continuous Delivery</h3>"
 
 
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
-        model_path = os.path.join(os.path.dirname(__file__), "Housing_price_model", "LinearRegression.joblib")
+        model_path = os.path.join(
+            os.path.dirname(__file__),
+            "Housing_price_model",
+            "LinearRegression.joblib"
+        )
+
         clf = joblib.load(model_path)
 
+        json_payload = request.json
+        LOG.info(f"JSON payload: {json_payload}")
+
+        inference_payload = pd.DataFrame(json_payload)
+        LOG.info(f"Inference payload DataFrame: {inference_payload}")
+
+        scaled_payload = scale(inference_payload)
+        prediction = clf.predict(scaled_payload)
+
+        return jsonify({"prediction": prediction.tolist()})
+
     except Exception as e:
-        LOG.exception("Model not loaded")
+        LOG.exception("Exception during prediction")
         return "Model not loaded", 500
-
-    json_payload = request.json
-    LOG.info("JSON payload: %s", json_payload)
-
-    inference_payload = pd.DataFrame(json_payload)
-    LOG.info("Inference payload DataFrame: %s", inference_payload)
-
-    scaled_payload = scale(inference_payload)
-    prediction = clf.predict(scaled_payload)
-
-    return jsonify({"prediction": prediction.tolist()})
 
 
 if __name__ == "__main__":
