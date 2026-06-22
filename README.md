@@ -101,6 +101,19 @@ Push code:
 git push
 
 ---
+## Azure CLI Commands
+
+The Azure resources for this project can be created and managed using the Bash script:
+
+commands.sh
+
+This script includes all required Azure CLI commands such as:
+- Creating a resource group
+- Creating an App Service plan
+- Deploying the web app
+- Configuring GitHub deployment
+
+---
 # Future Enhancements
 
 The project can be improved in several ways:
